@@ -1,0 +1,214 @@
+body {
+  font-family: "Segoe UI", Arial, 'Times New Roman', Times, serif;
+  background-color: #fff8e1;  
+  color: #1a1a1a;
+}
+
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.nav-link {
+    font-size: 16px;
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #ffc107;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.carousel-img {
+    width: 80%;
+    height: 500px;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 15px;
+}
+.carousel-bg {
+  background: linear-gradient(135deg, #a29d8f, #ffe8cc);
+  border-radius: 10px;
+  padding: 50px 10px;
+
+}
+
+.carousel-caption {
+    background: rgba(0,0,0,0.6);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.intro-section {
+  background-color: #0b1f33;   padding: 60px 0;
+  color: #ffffff;}
+
+
+.recipe-card {
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.recipe-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.recipe-card img {
+    height: 180px;
+    object-fit: cover;
+}
+
+
+.btn-primary {
+    background-color: #0b5ed7;
+    border: none;
+}
+section.container {
+  background-color: #ffffff;
+  padding: 60px;
+  border-radius: 6px;
+}
+.bottom-btn {
+  position: fixed;
+  bottom: 20px;     
+  right: 20px;      
+  padding: 12px 20px;
+  background-color: #494e57;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  text-decoration: none;
+}
+
+.bottom-btn:hover {
+  background-color: #393b3d;
+}
+.load-more-btn {
+  padding: 12px 35px;
+  border-radius: 50px;
+  border: 2px solid #0b5ed7;
+  background: transparent;
+  color: #0b5ed7;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.load-more-btn:hover {
+  background-color: #0b5ed7;
+  color: #fff;
+}
+/* ===== FULL SCREEN HERO CAROUSEL ===== */
+
+.hero-carousel {
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-carousel .carousel-inner,
+.hero-carousel .carousel-item {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.hero-carousel .carousel-item {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ===== BACKGROUND IMAGES ===== */
+
+.bg-slide1 {
+  background: url("logo.jpg");
+  
+}
+
+.bg-slide2 {
+  background: url("images/slide2.jpg") ;
+}
+
+.bg-slide3 {
+  background: url("images/slide3.jpg") center center / cover no-repeat;
+}
+
+/* ===== DARK OVERLAY (Siemens style) ===== */
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* ===== CONTENT POSITIONING ===== */
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  color: #ffffff;
+  max-width: 520px;
+  z-index: 2;
+  justify-content: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* ===== BUTTON STYLE ===== */
+
+.hero-content .btn {
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 500;
+}
+.carousel-card {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    max-width: 520px;
+    background: rgba(0,0,0,0.55);
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+}
+.carousel-img {
+    height: 100vh;          /* full screen */
+    object-fit: contain; /* fit entire image */
+  }
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;    /* Full cover */
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
