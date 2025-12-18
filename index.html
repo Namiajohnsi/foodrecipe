@@ -14,6 +14,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    {
+      pageLanguage: 'en',
+      includedLanguages: 'en,fr,es,pt',
+      autoDisplay: false
+    },
+    'google_translate_element'
+  );
+}
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
 <body>
 
 <nav class="bg-dark p-3">
@@ -31,6 +47,25 @@
         </ul>
     </div>
 </nav>
+<div class="top-controls">
+
+  <div class="lang-wrapper">
+    <div class="lang-btn">
+      🌐
+    </div>
+
+    <div class="form-change-lang">
+       <div id="google_translate_element"></div>
+        
+    </div>
+  </div>
+
+  <div class="theme-changer" id="themeToggle">
+    🌙
+  </div>
+
+</div>
+
 <div id="recipeCarousel"
      class="carousel slide hero-carousel my-0"
      data-bs-ride="carousel">
@@ -44,7 +79,7 @@
 
   <div class="carousel-inner">
 
-    <!-- Slide 1 -->
+    
     <div class="carousel-item active " style="background-image: url('slide1.jpg');">
       <div class="carousel-card">
         <h2>Welcome to Food Recipe Platform</h2>
@@ -56,7 +91,7 @@
       </div>
     </div>
 
-    <!-- Slide 2 -->
+    
     <div class="carousel-item bg-slide2"style="background-image: url('slide1.jpg');">
       <div class="carousel-card">
         <h2>Standardized Recipe Format</h2>
@@ -68,7 +103,7 @@
       </div>
     </div>
 
-    <!-- Slide 3 -->
+    
     <div class="carousel-item bg-slide3"style="background-image: url('slide1.jpg');">
       <div class="carousel-card">
         <h2>What You Can Explore</h2>
@@ -81,7 +116,7 @@
       </div>
     </div>
 
-    <!-- Slide 4 -->
+    
     <div class="carousel-item bg-slide4"style="background-image: url('slide1.jpg');">
       <div class="carousel-card">
         <h2>Healthy Home Cooking</h2>
@@ -95,7 +130,7 @@
 
   </div>
 
-  <!-- Controls -->
+  
   <button class="carousel-control-prev" type="button"
           data-bs-target="#recipeCarousel" data-bs-slide="prev">
     <span class="carousel-control-prev-icon"></span>
@@ -109,8 +144,6 @@
 </div>
 
 
-
-<!-- INTRO SECTION -->
 <section class="intro-section text-center">
     <div class="container">
         <h1 class="fw-bold">Delicious Homemade Recipes</h1>
@@ -118,8 +151,6 @@
         </p>
     </div>
 </section>
-
-<!-- RECIPES -->
 <section class="container my-5">
     <div class="row g-4">
 
@@ -214,11 +245,55 @@
 </div>
 
 </section>
+<section class="video-section text-center my-5">
+  <div class="container">
+    <h2 class="mb-4">Cooking Video Tutorial</h2>
+    <video class="img-fluid" controls>
+      <source src="tutorial.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
 
-<!-- FOOTER -->
-<footer class="bg-dark text-white text-center p-3">
-    © 2025 Food Recipe Website
+
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <div class="footer-column">
+      <h4>Useful Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipe.html">Recipes</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Recipes</h4>
+      <ul>
+        <li><a href="pasta.html">Pasta</a></li>
+        <li><a href="briyani.html">Briyani</a></li>
+        <li><a href="salad.html">Salad</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="#"> Facebook</a></li>
+        <li><a href="#"> Instagram</a></li>
+        <li><a href="#"> YouTube</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Food Recipe Website. All Rights Reserved.</p>
+  </div>
 </footer>
+
 
 </body>
 </html>
