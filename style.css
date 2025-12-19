@@ -242,7 +242,7 @@ section.container {
 }
 .lang-btn:hover,
 .theme-changer:hover {
-  background: #0b5ed7;
+  background: #ff8c42;
   color: white;
   transform: scale(1.08);
 }
@@ -287,3 +287,114 @@ section.container {
   padding: 6px;
 }
 
+
+.navigation-checkbox {
+  display: none;
+}
+
+.recipe-trigger {
+  cursor: pointer;
+}
+
+
+.navigation-background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 28px;
+  height: 28px; 
+background: radial-gradient(circle, #6f4e37, #2e1b12);
+
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.65s ease-in-out;
+  z-index: 9998;
+}
+
+
+.navigation-nav {
+  position: fixed;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease;
+  z-index: 9999;
+}
+
+
+.navigation-list {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  padding: 0;
+  margin: 0;
+}
+.navigation-link {
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.navigation-checkbox:checked ~ .navigation-background {
+  transform: translate(-50%, -50%) scale(90);
+}
+
+.navigation-checkbox:checked ~ .navigation-nav {
+  opacity: 1;
+  visibility: visible;
+}
+
+nav {
+  position: relative;
+  z-index: 10;
+}
+
+.navigation-checkbox:checked ~ .navigation-nav {
+  overflow: hidden;
+}
+.nav-close {
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  font-size: 42px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 2000;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-close:hover {
+  color: #ffc107;
+  transform: rotate(90deg) scale(1.1);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.scroll-top {
+  width: 42px;
+  height: 42px;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.scroll-top:hover {
+  background: #ff8c42;
+  color: #fff;
+  transform: scale(1.1);
+}
