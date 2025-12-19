@@ -30,7 +30,7 @@ function googleTranslateElementInit() {
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
-<body>
+<body id="top">
 
 <nav class="bg-dark p-3">
     <div class="container d-flex align-items-center">
@@ -41,12 +41,38 @@ function googleTranslateElementInit() {
 
         <ul class="d-flex ms-auto list-unstyled mb-0">
             <li class="mx-3"><a href="index.html" class="nav-link text-white">Home</a></li>
-            <li class="mx-3"><a href="recipe.html" class="nav-link text-white">Recipes</a></li>
+<li class="mx-3">
+  <label for="nav-toggle" class="nav-link text-white recipe-trigger">
+    Recipes
+  </label>
+</li>
             <li class="mx-3"><a href="about.html" class="nav-link text-white">About</a></li>
             <li class="mx-3"><a href="contact.html" class="nav-link text-white">Contact</a></li>
         </ul>
     </div>
 </nav>
+<header class="navigation">
+
+  <input type="checkbox" class="navigation-checkbox" id="nav-toggle">
+
+  <div class="navigation-background">&nbsp;</div>
+
+  <nav class="navigation-nav">
+    <label for="nav-toggle" class="nav-close">
+  &times;
+</label>
+
+    <ul class="navigation-list">
+      
+      <li class="navigation-item"><a href="recipe.html" class="navigation-link">All Recipes</a></li>
+      <li class="navigation-item"><a href="pasta.html" class="navigation-link">Pasta</a></li>
+      <li class="navigation-item"><a href="briyani.html" class="navigation-link">Briyani</a></li>
+      <li class="navigation-item"><a href="salad.html" class="navigation-link">Salad</a></li>
+    </ul>
+  </nav>
+
+</header>
+
 <div class="top-controls">
 
   <div class="lang-wrapper">
@@ -63,6 +89,10 @@ function googleTranslateElementInit() {
   <div class="theme-changer" id="themeToggle">
     🌙
   </div>
+  <a href="#top" class="scroll-top" title="Go to top">
+  /\
+</a>
+
 
 </div>
 
