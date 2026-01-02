@@ -505,6 +505,79 @@ nav {
     color: #fff;
 }
 */
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #000028;
+    color: #2c2c2c;
+}
+
+/* HERO SECTION */
+.about-hero {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-text h1 {
+    font-size: 42px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* MISSION SECTION */
+.mission {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.mission-image img {
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 16px;
+}
+
+.mission-text h2 {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.mission-text p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .about-hero,
+    .mission {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
 
 
 .contact-wrapper {
